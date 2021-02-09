@@ -18,6 +18,7 @@ This containerized example application connects to an Autonomous Database. There
 git clone git@github.com:m1nka/nodejs-autonomous-db-example.git
 docker build --pull -t nodejs-autonomous-example:1 .
 docker run -it --rm nodejs-autonomous-example:1
+```
 
 ## Deploy to Kubernetes
 
