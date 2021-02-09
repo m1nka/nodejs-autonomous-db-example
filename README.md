@@ -15,7 +15,7 @@ This containerized example application connects to an Autonomous Database. There
 4. Build and run Docker container
 
 ```
-git clone 
+git clone git@github.com:m1nka/nodejs-autonomous-db-example.git
 docker build --pull -t nodejs-autonomous-example:1 .
 docker run -it --rm nodejs-autonomous-example:1
 
@@ -28,3 +28,5 @@ kubectl apply -f deployment.yaml
 kubectl get pods
 kubectl logs <pod-id>
 ```
+
+Note: The container will only run its query and is then terminated (no running process). So it is normal to see 0/1 ready. Check the logs to see if the container queried the autonomous database successfully.
